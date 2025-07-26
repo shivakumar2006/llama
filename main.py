@@ -1,7 +1,7 @@
 from llama_cpp import Llama 
 
 def format_prompt(prompt): 
-    return f"[INST] <<SYS>>\nYou are a helpful assistant.\n<</SYS>>\n\n{prompt} [INST]"
+    return f"[INST] <<SYS>>\nYou are a helpful assistant.\n<</SYS>>\n\n{prompt} [/INST]"
 
 def main(): 
     print("🔥 llama project started successfully")
@@ -26,7 +26,7 @@ def main():
 
         response = llm(
             full_prompt,
-            max_tokens=256,
+            max_tokens=512,
             temperature=0.7,
             top_p=0.9,
             stop=["</s>"]
