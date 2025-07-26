@@ -11,7 +11,7 @@ def main():
         model_path=model_path,
         n_ctx=2048, #context length
         n_threads=4, #tune based on CPU
-        n_gpu_layers=10, #optional, if you have GPU
+        n_gpu_layers=0, #optional, if you have GPU
         verbose=False
     )
 
